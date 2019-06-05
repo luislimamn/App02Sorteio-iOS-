@@ -1,51 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GeradorDeNumeros" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-Kl-xxk">
-                                <rect key="frame" x="67" y="20" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-Kl-xxk">
+                                <rect key="frame" x="95" y="67" width="240" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7TG-R3-teW"/>
+                                    <constraint firstAttribute="height" constant="120" id="Nga-cm-mOR"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tat-EY-S9y">
-                                <rect key="frame" x="57" y="203" width="261" height="261"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="botaogerar.png"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tat-EY-S9y">
+                                <rect key="frame" x="90" y="195" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="188-Qx-Twm"/>
+                                    <constraint firstAttribute="height" constant="250" id="gFC-PR-scd"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="botaogerar"/>
                                 <state key="highlighted" image="botaogerar-pressionado.png"/>
                                 <connections>
                                     <action selector="gerarNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BI2-qV-q2s"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EW0-lN-R3w">
-                                <rect key="frame" x="16" y="472" width="343" height="147"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EW0-lN-R3w">
+                                <rect key="frame" x="55" y="453" width="320" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="1Qd-gm-Oc9"/>
+                                    <constraint firstAttribute="height" constant="150" id="msx-km-5ut"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.32941176470588235" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.32941176470588235" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EW0-lN-R3w" firstAttribute="top" secondItem="tat-EY-S9y" secondAttribute="bottom" constant="8" symbolic="YES" id="94c-wy-VtT"/>
+                            <constraint firstItem="EW0-lN-R3w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DLt-T6-TBC"/>
+                            <constraint firstItem="tat-EY-S9y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JS7-Ax-eYJ"/>
+                            <constraint firstItem="2hZ-Kl-xxk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NBw-HB-g3I"/>
+                            <constraint firstItem="2hZ-Kl-xxk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Nuc-SF-1Dn"/>
+                            <constraint firstItem="tat-EY-S9y" firstAttribute="top" secondItem="2hZ-Kl-xxk" secondAttribute="bottom" constant="8" symbolic="YES" id="pqa-s9-2ic"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="numeroGerado" destination="EW0-lN-R3w" id="ug4-MV-jfO"/>
@@ -57,8 +67,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="botaogerar" width="87" height="87"/>
         <image name="botaogerar-pressionado.png" width="261" height="261"/>
-        <image name="botaogerar.png" width="261" height="261"/>
-        <image name="logo.png" width="328" height="130"/>
+        <image name="logo" width="109.33333587646484" height="43.333332061767578"/>
     </resources>
 </document>
