@@ -14,12 +14,10 @@ class ViewController: UIViewController {
     
     @IBAction func gerarNumero(_ sender: Any) {
         
-        var maximo: Int = 0
-        maximo = 1000
-        
-        var numero: Int = 0
-        numero = Int(arc4random_uniform(UInt32(maximo)))
-        numeroGerado.text = "\(numero)"
+        let maximo: UInt32 = 1000
+        let numero = arc4random_uniform(maximo)
+        numeroGerado.text = String(numero)
+        //numeroGerado.text = "\(numero)"
         
     }
     
